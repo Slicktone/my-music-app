@@ -1,0 +1,65 @@
+doctype html
+html(lang='en')
+  head
+    title My Music App
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+  header#banner
+    .container
+      nav#navbar.collapse.navbar-collapse(role='navigation')
+        ul.nav.navbar-nav.navbar-right
+          li
+            a.scrollable(href='#top') About
+          li
+            a.scrollable(href='#artists') Artists
+          li
+            a.scrollable(href='#concerts') Concerts
+  a#top(name='home')
+  main
+    header
+      .About
+        h2  About 
+        hr.star-dark
+        p
+          | "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        p
+          | "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    // -Artists go here -
+    section#artists
+      .artists
+        h2  Artists 
+      hr.star-dark
+      ul.grid
+        li
+          img(src='http://i1208.photobucket.com/albums/cc364/shadowgeek74261/d11a2da1-e08c-422b-9bfb-77a770d9c0cb.jpg')
+        li
+          img(src='http://i1208.photobucket.com/albums/cc364/shadowgeek74261/d11a2da1-e08c-422b-9bfb-77a770d9c0cb.jpg')
+        li
+          img(src='http://i1208.photobucket.com/albums/cc364/shadowgeek74261/d11a2da1-e08c-422b-9bfb-77a770d9c0cb.jpg')
+        li
+          img(src='http://i1208.photobucket.com/albums/cc364/shadowgeek74261/d11a2da1-e08c-422b-9bfb-77a770d9c0cb.jpg')
+        li
+          img(src='http://i1208.photobucket.com/albums/cc364/shadowgeek74261/d11a2da1-e08c-422b-9bfb-77a770d9c0cb.jpg')
+        li
+          img(src='http://i1208.photobucket.com/albums/cc364/shadowgeek74261/d11a2da1-e08c-422b-9bfb-77a770d9c0cb.jpg')
+    // Concerts
+    section#concerts
+      .concerts
+        h2 Concerts
+      hr.star-dark
+      ol.grid
+        li
+          p  Concert A 
+        li
+          p  Concert B 
+        li
+          p  Concert C 
+        li
+          p  Concert D 
+        li
+          p  Concert E 
+        li
+          p  Concert F 
