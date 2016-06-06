@@ -1,0 +1,164 @@
+body
+  margin 0
+  padding 0
+  color #666
+  background #888
+  font-family "Helvetica Neue",Helvetica,Arial,sans-serif
+  font-size 20px
+
+h2,h3
+  color #888
+  font-weight bold
+  text-align center
+  text-transform uppercase
+
+a
+  color #722872
+
+a:hover,a:focus
+  color #592059
+
+#banner .container, 
+main header, 
+#artists .grid, 
+#concerts>div,
+footer #footer-above
+  display -webkit-box
+  display -webkit-flex
+  display -ms-flexbox
+  display flex
+  -webkit-flex-flow row wrap
+  -ms-flex-flow row wrap
+  flex-flow row wrap
+  -webkit-justify-content space-around
+  -ms-flex-pack distribute
+  justify-content space-around
+  -webkit-box-align start
+  -webkit-align-items flex-start
+  -ms-flex-align start
+  align-items flex-start
+  margin 0 auto
+
+#banner
+  background-color #000 !important
+  height 45px
+  box-shadow 0px 2px 2px 1px rgba(0,0,0,1)
+  border-color #fff
+  .container
+    width 95%
+    max-width 1024px
+    -webkit-box-pack justify
+    -webkit-justify-content space-between
+    -ms-flex-pack justify
+    justify-content space-between
+    -webkit-box-align center
+    -webkit-align-items center
+    -ms-flex-align center
+    -ms-grid-row-align center
+    align-items center
+  img
+    height 50px
+    margin 15px
+
+#banner .container::before, #banner .container::after
+  display inline-block
+
+nav
+  font-size 13px
+  background #fff
+  -webkit-transition all .3s
+  transition all .3s
+
+@media(max-width:768px)
+  nav
+    padding 5px
+    text-align center
+    margin 0 auto
+    width 120%
+    .active
+      a
+        color #fff
+        background #bbb
+        box-shadow 0px 2px 2px 1px rgba(0,0,0,0.1)
+
+.nav
+  & > li
+    height 100%
+    text-transform uppercase
+    font-weight bold
+    letter-spacing 2px
+    display -display:-webkit-inline-box
+    display -webkit-inline-flex
+    display -ms-inline-flexbox
+    display inline-flex
+    a
+      color #000
+      padding 10px 20px
+      &:hover
+        color #722872
+        background #bbb
+        box-shadow 1px 1px 1px 1px
+
+.navbar-toggle
+  margin-right 0
+
+#top
+  height 80px
+  display block
+
+main
+  & > *:not(scroll-top)
+    max-width 1024px
+    margin 0 auto
+    box-shadow 0px 0px 2px 1px rgba(0, 0, 0, 0.2)
+  header
+    background #000
+    color #ccc
+    text-align center
+    padding 70px 10% 50px
+    -webkit-box-align end
+    -webkit-align-items flex-end
+    -ms-flex-align end
+    -ms-grid-row-align flex-end
+    align-items flex-end
+    -webkit-align-content space-around
+    -ms-flex-line-pack distribute
+    align-content space-around
+    .About
+      max-width 800px
+      text-align center
+      margin-bottom 30px
+    p
+      font-size 1.15em
+      letter-spacing 1px
+  section
+    background #eee
+    padding 0 30px 30px 0
+  .artists
+    padding-top 50px
+  .concerts
+    padding-top 50px
+
+#artists
+  margin-top 20px
+  .grid
+    padding 0
+    max-width 90%
+    list-style none
+    li
+      margin 20px
+      max-width 600px
+  img
+    max-width 100%
+    height auto
+    display block
+
+#concerts
+  margin-top 20px
+  .grid
+    li
+      margin auto
+      padding 50px
+      max-width 100%
+      display inline-block
+
